@@ -58,12 +58,39 @@ int solution(vector<int> numbers, int target) {
 	return ans;
 }
 
+
+int solution2(vector<int> numbers, int target) { //BFS
+	int ans2 = 0;
+	vector<int> arr_bfs;
+	arr_bfs.push_back(0);
+	
+	vector<int> tmp;
+	for (int i = 0; i < numbers.size(); i++) {
+		tmp.clear();
+		for (int j = 0; j < arr_bfs.size(); j++) {
+			tmp.push_back(arr_bfs[j] + numbers[i]);
+			tmp.push_back(arr_bfs[j] - numbers[i]);
+		}
+		arr_bfs = tmp;
+	}
+
+	for (int i = 0; i < arr_bfs.size(); i++) {
+		if (arr_bfs[i] == target)
+			++ans2;
+	}
+
+	return ans2;
+}
+
 int main() {
 	vector<int> numbers = {1, 1, 1, 1, 1};
 	int target = 3;
 
-	int ret = solution(numbers, target);
+	int ret = solution(numbers, target); //DFS
 	cout << ret << endl;
+
+	int ret2 = solution2(numbers, target); //BFS
+	cout << ret2 << endl;
 	
 	return 0;
 }
