@@ -182,6 +182,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="10_ODD_6.cpp" />
+    <ClCompile Include="11_fileRead.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stack.h" />
