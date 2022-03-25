@@ -20,9 +20,39 @@ public:
 	void setDOY(std::string DOY);
 	void setOBS();
 	double str2double(std::string s, int a, int b);
+	double str2double2(std::string s, int a, int b);
 
 	void ReadEPH(std::string fp);
 	void ReadOBS(std::string fp);
+
+	struct Obs {
+		int yy;
+		int mm;
+		int dd;
+
+		double hour;
+		double min;
+		double sec;
+
+		std::string gnss_type; // GRECJ ..
+		int prn;
+		double meas; // measurement
+		Obs() {
+			double yy = 0;
+			double mm = 0;
+			double dd = 0;
+
+			double hour = 0;
+			double min = 0;
+			double sec = 0;
+
+			std::string gnss_type = ""; // GRECJ ..
+			int prn = 0;
+			double meas = 0;
+		}
+		
+	}
+	;
 
 	struct eph {
 		char GNSS_type; // G R E C J ...
@@ -89,7 +119,8 @@ public:
 		}
 	};
 	std::vector<eph> ephs;
-	 
+	std::vector<Obs> Obss;
+
 	struct MEAS {
 		
 	};
