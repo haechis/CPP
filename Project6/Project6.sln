@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "goto문", "Project5\Project
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "배열", "배열\배열.vcxproj", "{B20500A1-A3B5-42B5-B508-FEF3F1C9FAB0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "다차원배열", "다차원배열\다차원배열.vcxproj", "{10E048FF-6099-4554-AA55-66741E6B20A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{B20500A1-A3B5-42B5-B508-FEF3F1C9FAB0}.Release|x64.Build.0 = Release|x64
 		{B20500A1-A3B5-42B5-B508-FEF3F1C9FAB0}.Release|x86.ActiveCfg = Release|Win32
 		{B20500A1-A3B5-42B5-B508-FEF3F1C9FAB0}.Release|x86.Build.0 = Release|Win32
+		{10E048FF-6099-4554-AA55-66741E6B20A3}.Debug|x64.ActiveCfg = Debug|x64
+		{10E048FF-6099-4554-AA55-66741E6B20A3}.Debug|x64.Build.0 = Debug|x64
+		{10E048FF-6099-4554-AA55-66741E6B20A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{10E048FF-6099-4554-AA55-66741E6B20A3}.Debug|x86.Build.0 = Debug|Win32
+		{10E048FF-6099-4554-AA55-66741E6B20A3}.Release|x64.ActiveCfg = Release|x64
+		{10E048FF-6099-4554-AA55-66741E6B20A3}.Release|x64.Build.0 = Release|x64
+		{10E048FF-6099-4554-AA55-66741E6B20A3}.Release|x86.ActiveCfg = Release|Win32
+		{10E048FF-6099-4554-AA55-66741E6B20A3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
