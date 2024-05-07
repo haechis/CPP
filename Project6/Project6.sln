@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "공용체Union", "공용체
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "열거형_enum", "열거형_enum\열거형_enum.vcxproj", "{7C7857EB-2983-410A-A7BA-C5CCBEDCDFB7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "STD 스타일 ARrray", "STD 스타일 ARrray\STD 스타일 ARrray.vcxproj", "{093DDA28-FE71-46C4-B9AF-262156E1D50E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -201,6 +203,14 @@ Global
 		{7C7857EB-2983-410A-A7BA-C5CCBEDCDFB7}.Release|x64.Build.0 = Release|x64
 		{7C7857EB-2983-410A-A7BA-C5CCBEDCDFB7}.Release|x86.ActiveCfg = Release|Win32
 		{7C7857EB-2983-410A-A7BA-C5CCBEDCDFB7}.Release|x86.Build.0 = Release|Win32
+		{093DDA28-FE71-46C4-B9AF-262156E1D50E}.Debug|x64.ActiveCfg = Debug|x64
+		{093DDA28-FE71-46C4-B9AF-262156E1D50E}.Debug|x64.Build.0 = Debug|x64
+		{093DDA28-FE71-46C4-B9AF-262156E1D50E}.Debug|x86.ActiveCfg = Debug|Win32
+		{093DDA28-FE71-46C4-B9AF-262156E1D50E}.Debug|x86.Build.0 = Debug|Win32
+		{093DDA28-FE71-46C4-B9AF-262156E1D50E}.Release|x64.ActiveCfg = Release|x64
+		{093DDA28-FE71-46C4-B9AF-262156E1D50E}.Release|x64.Build.0 = Release|x64
+		{093DDA28-FE71-46C4-B9AF-262156E1D50E}.Release|x86.ActiveCfg = Release|Win32
+		{093DDA28-FE71-46C4-B9AF-262156E1D50E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
