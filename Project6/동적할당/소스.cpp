@@ -111,4 +111,39 @@ int main()
 	delete person;
 	
 
+
+	// NULL POINT : nullptr
+	// 비어있는 포인터를 하나 생성
+	// 무엇을 넣을지 아직 결정하지 않고 포인터를 만들 경우 사용 가능
+	// 포인터를 사용할 때, 비어있는 포인터를 nullptr로 만들어주는 습관 좋음.
+	// if(p) -> p가 비어있지 않으면 실행
+	// 즉, if(!p==nullptr)과 같음.
+	int* p = nullptr;
+	// 
+	cout << "C++11 이상 사용 시, NULL 말고, nullptr사용해야 안전함." << endl;
+	
+	nullptr_t n;
+	n = nullptr;
+	int* q = n;
+	int* r = n;
+	cout << q << endl << r << endl;
+	
+
+	//<void pointer>
+	int numb = 10;
+	int* po = &numb;
+	cout << *po << endl; // de referencing
+
+	void* vp = po;
+	// cout << *vp << endl; // void pointer의 de referencing이 안됨.
+
+	int* p0 = (int*)vp; // 형변환 가능
+	cout << *p0 << endl;
+
+
+	// 그럼 void pointer를 왜 쓸까?
+	// c스타일에 할당이 있음.
+	int* pp = (int*)malloc(sizeof(int) * 3);// memory allocation. 즉, 12바이트만큼의 포인터를 할당함. 어떤 타입으로 리턴해야할 지 모르는 경우에
+	// 어떤 주소를 알려주는지는 알 수 없음.
+	free(pp);
 }
