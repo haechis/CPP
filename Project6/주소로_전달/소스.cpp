@@ -34,6 +34,24 @@ void upgrade_pt(Weapon* weapon)
 	weapon->price += 10;
 }
 
+void print(Weapon weapon)
+{
+	cout << " Print 함수 내부 (Call by Value)" << endl;
+	cout << weapon.price << " " << weapon.power << endl;
+}
+
+void print_pt(const Weapon* weapon)
+{
+	cout << "\n\nPointer로 넘겨도 값이 변하지 않는다는 것을 보장하는 방법" << endl;
+	cout << "입력값으로 cosnt를 받음!" << endl;
+	cout << "weapon이라는 포인터가 가리키는 위치의 값을 바꿀수가 없음." << endl; 
+	cout << " Print 함수 내부 (Call by address)" << endl;
+	cout << weapon->price << " " << weapon->power << endl;
+
+	cout << " \n const는 const로 받아야함." << endl;
+
+	const Weapon* weapon_test = weapon;
+}
 
 int main()
 {
@@ -86,5 +104,10 @@ int main()
 
 	// Pointer로 값을 입력하면 값이 변할 수 있음.
 	// 값이 변하지 않는 것을 보장하는 방법
-	cout << "Pointer로 넘겨도 값이 변하지 않는다는 것을 보장하는 방법" << endl;
+	cout << "\n\nPointer로 넘겨도 값이 변하지 않는다는 것을 보장하는 방법" << endl;
+	cout << "Print(weapon) 함수" << endl;
+	print(weapon); // 업그레이드 된 이후 값 출력
+	print_pt(&weapon);
+	
+
 }
