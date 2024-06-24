@@ -1,3 +1,55 @@
+#include<iostream>
+
+class Class_Test
+{
+	// 클래스
+	// 생성자, 소멸자
+	// 객체 생성, 소멸 시 자동 호출
+	// 직접 만들지 않으면 기본 소멸자/생성자 있음.
+
+	// 멤버함수.: 해당 클래스가 사용하는 전용 함수
+
+
+
+private:
+	int m_i;
+	float m_f;
+
+public:
+	
+
+	Class_Test()  // 생성자
+		: m_i(100) //이니셜라이저
+		, m_f(0.f) // 이니셜라이저
+	{	
+	}
+	
+	void SetInt(int i)
+	{
+		m_i = i;
+	}
+
+	// 소멸자
+	// 메인함수 return 할 때 , 소멸자 실행 됨.
+	~Class_Test()
+	{
+
+	}
+
+};
+
+int main()
+{
+	Class_Test c; // 클래스 내 public 멤버 변수에 접근 가능.
+	// 생성자가 바로 실행 됨.
+	
+	c.SetInt(10);
+
+	return 0;
+}
+
+
+/*
 #pragma warning(disable:4996)
 #include<iostream>
 #include<string>
@@ -80,3 +132,4 @@ int main()
 	player2.attack(player1);
 
 }
+*/
