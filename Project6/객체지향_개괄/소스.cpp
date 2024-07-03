@@ -1,5 +1,86 @@
 #include<iostream>
 
+#include<string>
+
+using namespace std;
+
+class Parent {
+protected:
+	string name;
+	int age;
+
+public:
+	Parent() {} // 기본 생성자
+	Parent(string name, int age)
+	{
+		this->name = name;
+		this->age = age;
+	}
+
+	void setName(string name)
+	{
+		this->name = name;
+	}
+
+	void setAge(int age)
+	{
+		this->age = age;
+	}
+	string getName()
+	{
+		return name;
+	}
+	int setAge()
+	{
+		return age;
+	}
+};
+
+class Child :public Parent 
+{
+public:
+	Child() {} // 기본 생성자
+
+	Child(string name, int age) :Parent(name, age)
+	{
+	}
+
+	void printName()
+	{
+		cout << "Child name: " << this->name << endl;
+	}
+	void printAge()
+	{
+		cout << "Child age: " << this->age << endl;
+	}
+};
+
+int main()
+{
+	Child child_1;
+
+	child_1.setName("ha");
+	child_1.setAge(30);
+
+	child_1.printName();
+	child_1.printAge();
+
+	Child child_2;
+
+	child_2.setName("haha");
+	child_2.setAge(20);
+	child_2.printName();
+	child_2.printAge();
+
+
+
+
+	return 0;
+}
+
+/*
+#include<iostream>
+
 class Class_Test
 {
 	// 클래스
@@ -45,9 +126,12 @@ int main()
 	
 	c.SetInt(10);
 
+	char a = 98;
+	std::cout << a << std::endl;
+
 	return 0;
 }
-
+*/
 
 /*
 #pragma warning(disable:4996)
